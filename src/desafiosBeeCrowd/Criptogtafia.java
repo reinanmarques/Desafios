@@ -31,7 +31,6 @@ public class Criptogtafia {
     public static void main(String[] args) {
     	
     	Scanner input = new Scanner(System.in);
-    	System.out.println("d:");
         String nome = input.nextLine();
 
         List<Integer> listaDeIntFinal = new ArrayList<>();                      

@@ -11,7 +11,6 @@ public class PrimoRápido {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Digite o numero:");
 		
 		Integer numero = input.nextInt();
 		if(isPrime(numero)){
