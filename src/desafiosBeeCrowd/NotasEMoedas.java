@@ -39,7 +39,7 @@ public class NotasEMoedas {
 				numero = numero - divMoedas * moedas[i];
 			}
 		}
-		System.out.println("NOTAS:");
+		System.out.println("NOTAS: ");
 		System.out.println(qtdNotas[0] + " nota(s) de R$ 100.00");
 		System.out.println(qtdNotas[1] + " nota(s) de R$ 50.00");
 		System.out.println(qtdNotas[2] + " nota(s) de R$ 20.00  ");
