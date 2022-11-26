@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
-public class MaisDatas {
+public class FormatantoDatas {
 
 	public static void main(String[] args) {
 		
@@ -16,7 +16,7 @@ public class MaisDatas {
 		
 		DateTimeFormatter ftm1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter ftm2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-		DateTimeFormatter ftm3 = DateTimeFormatter.ISO_INSTANT
+		DateTimeFormatter ftm3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")
 				.withZone(ZoneId.systemDefault());
 		
 		System.out.println("Data formatada: "+ data1.format(ftm1));
