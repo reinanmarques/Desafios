@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
+
 public class OperacoesComDatas {
 	public static void main(String[] args) {
 		LocalDate data1 = LocalDate.of(2020, 03, 12);
@@ -32,7 +33,12 @@ public class OperacoesComDatas {
 		// Calculando duracao
 		
 		Duration dura1 = Duration.between(data2,nextWeeksTime);
-		System.out.println(dura1.toDays());
+		Duration dura2 = Duration.between(lastWeeks.atStartOfDay(),data1.atStartOfDay());
+		Duration dura3 = Duration.between(lastMoths,data3);
+		
+		System.out.println("Duracao LocalDate: "+dura1.toDays()+" dias");
+		System.out.println("Duracao LocalDateTime: "+dura2.toDays()+" dias");
+		System.out.println("Duracao Instant: "+dura3.toDays()+" dias");
 		
 	}
 
